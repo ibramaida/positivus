@@ -1,0 +1,80 @@
+.scroller {
+  --_slide-count: 5;
+  --_slide-height: 50px;
+  --_slide-width: 100px;
+  --_gap: 4rem;
+  --_animation-duration: 40s;
+  /* --_animation-direction: forwards; */
+  max-width: 60rem;
+  margin-inline: auto;
+  /* outline: 3px solid orangered; */
+}
+
+.scroller[data-animation="true"] {
+  overflow: hidden;
+  max-width: 1440px;
+  /* width: min(100%, 1440px); */
+}
+
+.scroller .scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--_gap);
+
+  > * {
+    width: var(--_slide-width);
+    /* aspect-ratio: 4 / 3; */
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.scroller[data-animation="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-animation="true"] .scroller__inner.forwards {
+}
+.scroller[data-animation="true"] .scroller__inner.reverse {
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, reverse) linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - var(--_gap) / 2));
+  }
+}
+
+/* @media (width >= 300px) {
+    .scroller {
+        max-width: 280px;
+        --_slide-width: 200px;
+    }
+}
+@media (width >= 500px) {
+    .scroller {
+        max-width: 460px;
+        --_slide-width: 200px;
+    }
+}
+@media (width >= 768px) {
+    .scroller {
+        max-width: 700px;
+        --_slide-width: 300px;
+    }
+}
+@media (width >= 1200px) {
+    .scroller {
+        max-width: 900px;
+        --_slide-width: 300px;
+    }
+} */
