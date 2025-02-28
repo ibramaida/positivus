@@ -71,3 +71,7 @@ h4 {
 .card {
   @apply flex flex-col md:flex-row md:justify-between relative p-8 border rounded-4xl shadow-[0_4px_0_rgb(0,0,0)];
 }
+
+.test {
+  color: red;
+}
