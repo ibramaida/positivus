@@ -23,8 +23,8 @@ const App = () => {
         ))}
         <Services />
         <CTA />
-        <CaseStudies />
       </main>
+      <CaseStudies />
     </>
   );
 };
