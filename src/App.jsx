@@ -4,12 +4,14 @@ import Hero from "./components/Hero";
 import { sliders } from "./sliders";
 import Scroller from "./components/Scroller";
 import Services from "./components/Services";
+import CTA from "./components/CTA";
+import CaseStudies from "./components/CaseStudies";
 
 const App = () => {
   return (
     <>
       <Header />
-      <main className="wrapper mx-auto space-y-12">
+      <main className="wrapper mx-auto space-y-16">
         <Hero />
         {sliders.map((slider) => (
           <Scroller
@@ -20,6 +22,8 @@ const App = () => {
           />
         ))}
         <Services />
+        <CTA />
+        <CaseStudies />
       </main>
     </>
   );

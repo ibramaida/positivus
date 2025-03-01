@@ -65,5 +65,9 @@ h4 {
 }
 
 .btn {
-  @apply bg-black text-white rounded-xl py-4 px-8 hover:bg-primary hover:text-black transition duration-200 cursor-pointer;
+  @apply bg-black text-white rounded-xl py-4 px-8 hover:bg-primary hover:text-black transition duration-200 cursor-pointer shadow-2xl;
+}
+
+.card {
+  @apply flex flex-col md:flex-row md:justify-between relative p-8 border rounded-4xl shadow-[0_4px_0_rgb(0,0,0)];
 }
