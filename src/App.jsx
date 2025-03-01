@@ -6,6 +6,7 @@ import Scroller from "./components/Scroller";
 import Services from "./components/Services";
 import CTA from "./components/CTA";
 import CaseStudies from "./components/CaseStudies";
+import Work from "./components/Work";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <CTA />
       </main>
       <CaseStudies />
+      <Work />
     </>
   );
 };
