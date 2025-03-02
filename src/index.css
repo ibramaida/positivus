@@ -28,6 +28,7 @@ h1 {
 }
 h2 {
   font-size: var(--heading-2);
+  font-size: clamp(1.2rem, calc(0.1rem + 3vw), 2rem);
 }
 h3 {
   font-size: var(--heading-3);
@@ -35,6 +36,7 @@ h3 {
 }
 h4 {
   font-size: var(--heading-4);
+  font-size: clamp(1rem, calc(0.1rem + 1.5vw), 1.5rem);
 }
 /* p {
   font-size: var(--paragraph);
