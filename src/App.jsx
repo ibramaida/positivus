@@ -9,6 +9,7 @@ import CaseStudies from "./components/CaseStudies";
 import Work from "./components/Work";
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
+import HorizontalSlider from "./components/HorizontalSlider";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
       <Work />
       <Team />
       <Testimonials />
+      <HorizontalSlider />
     </>
   );
 };
