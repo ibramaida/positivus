@@ -8,6 +8,7 @@ import CTA from "./components/CTA";
 import CaseStudies from "./components/CaseStudies";
 import Work from "./components/Work";
 import Team from "./components/Team";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <CaseStudies />
       <Work />
       <Team />
+      <Testimonials />
     </>
   );
 };
