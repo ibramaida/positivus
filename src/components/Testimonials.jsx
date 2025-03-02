@@ -50,7 +50,7 @@ const Testimonials = () => {
           about Our Digital Marketing Services
         </p>
       </div>
-      <div className="bg-black py-6 px-6  text-gray-500 rounded-4xl">
+      <div className="bg-black py-6 px-6 md:py-16  text-gray-500 rounded-4xl">
         <div className="flex gap-6 overflow-x-auto">
           {testmonialsItems.map((item) => (
             <div className="min-w-[min(100%,290px)] md:min-w-100">
