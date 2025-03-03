@@ -18,6 +18,8 @@ const HorizontalSlider = () => {
   useEffect(() => {
     if (sliderRef.current) {
       slideWidth.current = sliderRef.current.children[0].offsetWidth + 20; // Include margin
+      console.log(slideWidth.current);
+
       updateButtonStates();
     }
   }, [slides, currentIndex]);

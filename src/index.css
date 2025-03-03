@@ -82,3 +82,35 @@ h4 {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  clip-path: polygon(
+    50% 15%,
+    100% 0,
+    85% 50%,
+    100% 100%,
+    50% 85%,
+    0 100%,
+    15% 50%,
+    0 0
+  );
+}
+
+.indicator-selected {
+  @media (width >= 687px) {
+    width: 24px;
+    height: 12px;
+    clip-path: polygon(
+      50% 15%,
+      100% 0,
+      85% 50%,
+      100% 100%,
+      50% 85%,
+      0 100%,
+      15% 50%,
+      0 0
+    );
+  }
+}
