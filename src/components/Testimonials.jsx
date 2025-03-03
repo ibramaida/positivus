@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const Testimonials = () => {
   const slides = [
@@ -71,7 +71,7 @@ const Testimonials = () => {
   const translateValue = `-${currentSlide * (100 / slidesPerView)}%`;
 
   return (
-    <section className="space-y-8 mt-32 mb-16 max-w-[min(100%-2rem,1440px)] mx-auto">
+    <section className="space-y-8 mt-32 max-w-[min(100%-2rem,1440px)] mx-auto">
       <div className="flex flex-col gap-6 items-center md:flex-row md:w-2xl">
         <h2 className="bg-primary p-2 leading-none rounded-lg text-nowrap">
           Testimonials

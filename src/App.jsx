@@ -11,6 +11,7 @@ import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
 import HorizontalSlider from "./components/HorizontalSlider";
 import Slider from "./components/Slider";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
       <Work />
       <Team />
       <Testimonials />
+      <Contact />
     </>
   );
 };
