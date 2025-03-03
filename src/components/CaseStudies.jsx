@@ -1,5 +1,7 @@
 import React from "react";
 
+import icon6 from "../assets/icons/Icon-6.svg";
+
 const CaseStudies = () => {
   return (
     <section className="space-y-8 mt-16 mb-16 ml-4 md:max-w-[min(100%-2rem,1440px)] md:mx-auto">
@@ -22,11 +24,7 @@ const CaseStudies = () => {
           <a className="flex items-center gap-4 text-primary" href="#">
             <span>Learn more</span>
             <span>
-              <img
-                className="w-4"
-                src="../src/assets/icons/Icon-6.svg"
-                alt=""
-              />
+              <img className="w-4" src={icon6} alt="" />
             </span>
           </a>
         </div>
@@ -40,11 +38,7 @@ const CaseStudies = () => {
           <a className="flex items-center gap-4 text-primary" href="#">
             <span>Learn more</span>
             <span>
-              <img
-                className="w-4"
-                src="../src/assets/icons/Icon-6.svg"
-                alt=""
-              />
+              <img className="w-4" src={icon6} alt="" />
             </span>
           </a>
         </div>
@@ -58,11 +52,7 @@ const CaseStudies = () => {
           <a className="flex items-center gap-4 text-primary" href="#">
             <span>Learn more</span>
             <span>
-              <img
-                className="w-4"
-                src="../src/assets/icons/Icon-6.svg"
-                alt=""
-              />
+              <img className="w-4" src={icon6} alt="" />
             </span>
           </a>
         </div>

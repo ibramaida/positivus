@@ -1,4 +1,19 @@
 import React from "react";
+import icon1 from "../assets/icons/Icon-1.svg";
+import icon2 from "../assets/icons/Icon-2.svg";
+import icon3 from "../assets/icons/Icon-3.svg";
+import icon4 from "../assets/icons/Icon-4.svg";
+import icon5 from "../assets/icons/Icon-5.svg";
+import icon6 from "../assets/icons/Icon-6.svg";
+import icon7 from "../assets/icons/Icon-7.svg";
+import icon8 from "../assets/icons/Icon-8.svg";
+
+import img1 from "../assets/images/services/img1.png";
+import img2 from "../assets/images/services/img2.png";
+import img3 from "../assets/images/services/img3.png";
+import img4 from "../assets/images/services/img4.png";
+import img5 from "../assets/images/services/img5.png";
+import img6 from "../assets/images/services/img6.png";
 
 const Services = () => {
   return (
@@ -20,14 +35,14 @@ const Services = () => {
             href="#"
             className="flex items-center gap-2 absolute bottom-8 left-8"
           >
-            <img src="../src/assets/icons/Icon-2.svg" alt="" />
+            <img src={icon2} alt="icon" />
             <span className="hidden md:block">learn more</span>
           </a>
           <div className="flex justify-end size-40 self-end">
             <img
-              src="../src/assets/images/services/img6.png"
+              src={img6}
               className="object-contain size-36 self-center"
-              alt=""
+              alt="Search engine optimization"
             />
           </div>
         </div>
@@ -40,14 +55,14 @@ const Services = () => {
             href="#"
             className="flex items-center gap-2 absolute bottom-8 left-8"
           >
-            <img src="../src/assets/icons/Icon-2.svg" alt="" />
+            <img src={icon2} alt="icon" />
             <span className="hidden md:block">learn more</span>
           </a>
           <div className="flex justify-end size-40 self-end">
             <img
-              src="../src/assets/images/services/img3.png"
+              src={img3}
               className="object-contain size-36 self-center"
-              alt=""
+              alt="Pay per click advertising"
             />
           </div>
         </div>
@@ -62,12 +77,12 @@ const Services = () => {
             href="#"
             className="flex items-center gap-2 absolute bottom-8 left-8"
           >
-            <img src="../src/assets/icons/Icon-1.svg" alt="" />
+            <img src={icon1} alt="" />
             <span className="hidden text-white md:block">learn more</span>
           </a>
           <div className="flex justify-end size-40 self-end">
             <img
-              src="../src/assets/images/services/img1.png"
+              src={img1}
               className="object-contain size-36 self-center"
               alt=""
             />
@@ -82,12 +97,12 @@ const Services = () => {
             href="#"
             className="flex items-center gap-2 absolute bottom-8 left-8"
           >
-            <img src="../src/assets/icons/Icon-2.svg" alt="" />
+            <img src={icon2} alt="" />
             <span className="hidden md:block">learn more</span>
           </a>
           <div className="flex justify-end size-40 self-end">
             <img
-              src="../src/assets/images/services/img4.png"
+              src={img4}
               className="object-contain size-36 self-center"
               alt=""
             />
@@ -102,12 +117,12 @@ const Services = () => {
             href="#"
             className="flex items-center gap-2 absolute bottom-8 left-8"
           >
-            <img src="../src/assets/icons/Icon-2.svg" alt="" />
+            <img src={icon2} alt="" />
             <span className="hidden md:block">learn more</span>
           </a>
           <div className="flex justify-end size-40 self-end">
             <img
-              src="../src/assets/images/services/img2.png"
+              src={img2}
               className="object-contain size-36 self-center"
               alt=""
             />
@@ -124,12 +139,12 @@ const Services = () => {
             href="#"
             className="flex items-center gap-2 absolute bottom-8 left-8"
           >
-            <img src="../src/assets/icons/Icon-1.svg" alt="" />
+            <img src={icon1} alt="" />
             <span className="hidden text-white md:block">learn more</span>
           </a>
           <div className="flex justify-end size-40 self-end">
             <img
-              src="../src/assets/images/services/img5.png"
+              src={img5}
               className="object-contain size-36 self-center"
               alt=""
             />

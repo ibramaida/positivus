@@ -1,10 +1,11 @@
 import React from "react";
+import logoBlack from "../assets/images/logo_black.svg";
 
 const Header = () => {
   return (
     <header className="wrapper flex justify-between items-center py-8  mx-auto mb-10">
       <div>
-        <img src="../src/assets/images/logo_black.svg" alt="logo" />
+        <img src={logoBlack} alt="logo" />
       </div>
       <ul className="hidden lg:flex md:gap-[clamp(1rem,1vw+.5rem,2rem)] items-center">
         <li>

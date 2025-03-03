@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./scroller.css";
 
-const Slider = ({ id, images, direction }) => {
+const Slider = ({ id, images }) => {
   const scrollerRef = useRef(null);
 
   const [slides, setSlides] = useState([]);
@@ -19,7 +19,6 @@ const Slider = ({ id, images, direction }) => {
 
   return (
     <div ref={scrollerRef} className="scroller" id={id}>
-      {/* <button onClick={() => setDir(!dir)}>{dir ? ">>>>>>" : "<<<<<<"}</button> */}
       <div className={`scroller__inner`}>
         {slides.map((src, index) => (
           <div key={index} className="slide">

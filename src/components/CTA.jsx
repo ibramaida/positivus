@@ -1,4 +1,5 @@
 import React from "react";
+import cta from "../assets/images/cta.svg";
 
 const CTA = () => {
   return (
@@ -12,7 +13,7 @@ const CTA = () => {
         <button className="btn md:self-start">Get your free proposal</button>
       </div>
       <div className="hidden md:block">
-        <img src="../src/assets/images/cta.svg" alt="" />
+        <img src={cta} alt="call to action" />
       </div>
     </section>
   );

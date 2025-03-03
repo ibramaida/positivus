@@ -1,4 +1,5 @@
 import React from "react";
+import heroImage from "../assets/images/hero_image.png";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
           Navigating the digital landscape for success
         </h1>
         <div className="md:row-span-3">
-          <img src="../src/assets/images/hero_image.png" alt="hero image" />
+          <img src={heroImage} alt="hero" />
         </div>
         <div>
           <p className="text-gray-500 mb-6">

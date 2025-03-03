@@ -1,47 +1,54 @@
 import React from "react";
 
+import john from "../assets/images/team/john.svg";
+import jane from "../assets/images/team/jane.svg";
+import michael from "../assets/images/team/michael.svg";
+import emily from "../assets/images/team/emily.svg";
+import brian from "../assets/images/team/brian.svg";
+import sarah from "../assets/images/team/sarah.svg";
+
 const teamMembers = [
   {
     id: 1,
     name: "John Smith",
     function: "CEO and Founder",
     desc: "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
-    imgUrl: "../src/assets/images/team/john.svg",
+    imgUrl: john,
   },
   {
     id: 2,
     name: "Jane Doe",
     function: "Director of Operations",
     desc: "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
-    imgUrl: "../src/assets/images/team/jane.svg",
+    imgUrl: jane,
   },
   {
     id: 3,
     name: "Michael Brown",
     function: "Senior SEO Specialist",
     desc: "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-    imgUrl: "../src/assets/images/team/michael.svg",
+    imgUrl: michael,
   },
   {
     id: 4,
     name: "Emily Johnson",
     function: "PPC Manager",
     desc: "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    imgUrl: "../src/assets/images/team/emily.svg",
+    imgUrl: emily,
   },
   {
     id: 5,
     name: "Brian Williams",
     function: "Social Media Specialist",
     desc: "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
-    imgUrl: "../src/assets/images/team/brian.svg",
+    imgUrl: brian,
   },
   {
     id: 6,
     name: "Sarah Kim",
     function: "Content Creator",
     desc: "2+ years of experience in writing and editing, Skilled in creating compelling, SEO-optimized content for various industries",
-    imgUrl: "../src/assets/images/team/sarah.svg",
+    imgUrl: sarah,
   },
 ];
 
@@ -69,7 +76,7 @@ const Team = () => {
               </div>
               <div>
                 <h4 className="font-bold">{member.name}</h4>
-                <p className="text-gray-500 text-[.925rem]">
+                <p className="text-gray-500 text-[.825rem]">
                   {member.function}
                 </p>
               </div>
