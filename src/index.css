@@ -48,10 +48,16 @@ h4 {
 .bg-primary {
   background-color: var(--color-primary);
 }
+.surface-primary {
+  background-color: var(--color-primary);
+}
 .clr-black {
   color: var(--color-black);
 }
 .bg-black {
+  background-color: var(--color-black);
+}
+.surface-black {
   background-color: var(--color-black);
 }
 .bg-gray {
