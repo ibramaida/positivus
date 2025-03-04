@@ -59,7 +59,7 @@ h4 {
 }
 
 .nav-link {
-  @apply lg:text-[20px] text-gray-800 p-2 rounded leading-none bg-white hover:bg-primary transition-all duration-300;
+  @apply lg:text-[20px] text-gray-800 p-2 rounded leading-none bg-white hover:bg-primary focus:bg-primary transition-all duration-300;
 }
 
 .nav-link:last-child {
@@ -67,7 +67,7 @@ h4 {
 }
 
 .btn {
-  @apply bg-black text-white rounded-xl py-4 px-8 hover:bg-primary hover:text-black transition duration-200 cursor-pointer shadow-2xl;
+  @apply bg-black text-white rounded-xl py-4 px-8 hover:bg-primary focus:bg-primary hover:text-black focus:text-black transition duration-200 cursor-pointer shadow-2xl;
 }
 
 .card {

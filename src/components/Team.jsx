@@ -85,7 +85,7 @@ const Team = () => {
             <p>{member.desc}</p>
             <a
               href="#"
-              className="flex items-center justify-center size-8 rounded-full absolute top-8 right-8 bg-black text-primary"
+              className="flex items-center justify-center size-8 rounded-full absolute top-8 right-8 bg-black text-primary hover:animate-pulse focus:animate-pulse"
             >
               <i class="bx bxl-linkedin"></i>
             </a>
