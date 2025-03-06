@@ -8,7 +8,7 @@ const Slider = ({ id, images }) => {
   // const [dir, setDir] = useState(true)
 
   useEffect(() => {
-    setSlides([...images, ...images]);
+    setSlides([...images, ...images, ...images]);
   }, []);
 
   useEffect(() => {
