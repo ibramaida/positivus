@@ -52,11 +52,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full mb-10 transition-all duration-300 ${
+      className={`fixed top-0 w-full transition-all duration-300 ${
         isScrolled ? "top-4 bg-black/60 backdrop-blur-sm" : "top-0"
       } z-10`}
     >
-      <div className="wrapper flex justify-between items-center py-4 md:py-8  mx-auto">
+      <div className="wrapper flex justify-between items-center py-4 md:py-6  mx-auto">
         {/* logo */}
         <a href="/">
           {isScrolled ? (
@@ -101,7 +101,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              className={`nav-link border  ${
+              className={`text-sm px-2 py-3 rounded-lg  leading-none hover:bg-primary focus:bg-primary hover:text-black focus:text-black  transition-all duration-300 border  ${
                 isScrolled ? "border-white" : "border-gray-500"
               }`}
               href="#raq"
@@ -122,7 +122,7 @@ const Header = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12"
+            className="h-8 w-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
