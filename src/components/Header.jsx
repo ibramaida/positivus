@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import logoBlack from "../assets/images/logo_black.svg";
 import logoWhite from "../assets/images/logoWhite.svg";
+import useProgress from "../hooks/useProgress";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
+
+  // scroll indicator
+  const scrollPercent = useProgress();
+  console.log(scrollPercent);
 
   // Handle scroll event
   useEffect(() => {
@@ -53,9 +58,13 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full transition-all duration-300 ${
-        isScrolled ? "top-4 bg-black/60 backdrop-blur-sm" : "top-0"
+        isScrolled ? "top-2 bg-black/60 backdrop-blur-sm" : "top-0"
       } z-10`}
     >
+      <span
+        className="bg-[#89fa02] absolute -top-2 w-full h-2"
+        style={{ transform: `translateX(${scrollPercent - 100}%)` }}
+      />
       <div className="wrapper flex justify-between items-center py-4 md:py-6  mx-auto">
         {/* logo */}
         <a href="/">
