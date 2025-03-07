@@ -75,27 +75,27 @@ const Header = () => {
           }`}
         >
           <li>
-            <a className="nav-link" href="about-us">
+            <a className="nav-link" href="/about">
               About us
             </a>
           </li>
           <li>
-            <a className="nav-link" href="services">
+            <a className="nav-link" href="/services">
               Services
             </a>
           </li>
           <li>
-            <a className="nav-link" href="use-cases">
+            <a className="nav-link" href="/use-cases">
               Use Cases
             </a>
           </li>
           <li>
-            <a className="nav-link" href="pricing">
+            <a className="nav-link" href="/pricing">
               Pricing
             </a>
           </li>
           <li>
-            <a className="nav-link" href="blog">
+            <a className="nav-link" href="/blog">
               Blog
             </a>
           </li>
@@ -104,7 +104,7 @@ const Header = () => {
               className={`nav-link border  ${
                 isScrolled ? "border-white" : "border-gray-500"
               }`}
-              href="request-quote"
+              href="#raq"
             >
               Request a quote
             </a>

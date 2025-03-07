@@ -1,43 +1,27 @@
 import React from "react";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import { sliders } from "./sliders";
-import Scroller from "./components/Scroller";
-import Services from "./components/Services";
-import CTA from "./components/CTA";
-import CaseStudies from "./components/CaseStudies";
-import Work from "./components/Work";
-import Team from "./components/Team";
-import Testimonials from "./components/Testimonials";
-import HorizontalSlider from "./components/HorizontalSlider";
-import Slider from "./components/Slider";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import UseCases from "./pages/UseCases";
+import Pricing from "./pages/Pricing";
+import Blog from "./pages/Blog";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <main className="wrapper mx-auto space-y-16">
-        <Hero />
-        {sliders.map((slider) => (
-          <Scroller
-            key={slider.id}
-            id={slider.id}
-            images={slider.images}
-            direction={slider.direction}
-          />
-        ))}
-        <Services />
-        <CTA />
-      </main>
-      <CaseStudies />
-      <Work />
-      <Team />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/use-cases" element={<UseCases />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
