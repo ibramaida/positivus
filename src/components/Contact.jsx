@@ -4,7 +4,10 @@ import formImg from "../assets/images/form/form.png";
 
 const Contact = () => {
   return (
-    <section className="space-y-8 mb-16 max-w-[min(100%-2rem,1440px)] mx-auto">
+    <section
+      id="raq"
+      className="space-y-8 mb-16 max-w-[min(100%-2rem,1440px)] mx-auto"
+    >
       <div className="flex flex-col gap-6 items-center md:flex-row md:w-2xl">
         <h2 className="bg-primary p-2 leading-none rounded-lg text-nowrap">
           Contact Us
