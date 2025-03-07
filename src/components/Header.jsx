@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full mb-10 transition-all duration-300 ${
-        isScrolled ? "top-4 bg-black/50 backdrop-blur-lg" : "top-0"
+        isScrolled ? "top-4 bg-black/60 backdrop-blur-sm" : "top-0"
       } z-10`}
     >
       <div className="wrapper flex justify-between items-center py-4 md:py-8  mx-auto">
@@ -67,6 +67,7 @@ const Header = () => {
         </a>
 
         {/* desktop navigation */}
+
         <ul
           role="primary navigation"
           className={`hidden lg:flex lg:flex-row lg:gap-[clamp(1rem,1vw+.5rem,2rem)] lg:items-center ${
@@ -134,34 +135,28 @@ const Header = () => {
             />
           </svg>
         </button>
-        {/* <button
-          className="lg:hidden cursor-pointer"
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <i class="bx bx-menu bx-lg "></i>
-        </button> */}
-
-        {/* mobile overlay */}
-        <div
-          className={`fixed inset-0 bg-black/50 transition-opacity md:hidden ${
-            isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-          aria-hidden="true"
-        />
       </div>
+
+      {/* mobile overlay */}
+      <div
+        className={`fixed inset-0 bg-black/50 transition-opacity lg:hidden ${
+          isMenuOpen ? "opacity-100 isolate" : "opacity-0 pointer-events-none"
+        } ${isScrolled ? "-top-4 h-screen w-full" : ""}`}
+        aria-hidden="true"
+      />
       {/* Mobile Navigation */}
       <div
         ref={menuRef}
-        className={`fixed top-0 right-0 h-full w-4/5 bg-white transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 h-screen w-4/5 bg-white transform transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } ${isScrolled ? "top-[-1rem] h-screen" : "top-0"}`}
       >
-        <div className="flex justify-between items-center p-4 border-b">
-          <span className="text-lg font-bold">Menu</span>
+        <div className="flex justify-end items-center p-4 border-b border-gray-300">
+          {/* <span className="text-lg font-bold">Menu</span> */}
           <button
             aria-label="Close menu"
             onClick={() => setIsMenuOpen(false)}
-            className="text-gray-600"
+            className="text-black"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -180,50 +175,80 @@ const Header = () => {
           </button>
         </div>
 
-        <nav className="px-8 py-16 flex flex-col gap-4">
+        <nav className="py-16 flex flex-col">
           <a
-            href="#home"
-            className="nav-link"
+            href="/"
+            className="nav-link-mobile"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </a>
           <a
-            href="#services"
-            className="nav-link"
+            href="/services"
+            className="nav-link-mobile"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </a>
           <a
-            href="#use-cases"
-            className="nav-link"
+            href="/use-cases"
+            className="nav-link-mobile"
             onClick={() => setIsMenuOpen(false)}
           >
             Use Cases
           </a>
           <a
-            href="#pricing"
-            className="nav-link"
+            href="/pricing"
+            className="nav-link-mobile"
             onClick={() => setIsMenuOpen(false)}
           >
             Pricing
           </a>
           <a
-            href="#blog"
-            className="nav-link"
+            href="/blog"
+            className="nav-link-mobile"
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </a>
           <a
+            href="/about"
+            className="nav-link-mobile"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About us
+          </a>
+          <a
             href="#raq"
-            className="nav-link "
+            className="nav-link-mobile "
             onClick={() => setIsMenuOpen(false)}
           >
             Request a quote
           </a>
         </nav>
+
+        {/* social icons */}
+
+        <div className="flex gap-8 items-center justify-center">
+          <a
+            href="#"
+            className="w-8 h-8 flex items-center justify-center shrink-0 text-white bg-black rounded-full hover:animate-pulse "
+          >
+            <i className="bx bxl-linkedin "></i>
+          </a>
+          <a
+            href="#"
+            className="w-8 h-8 flex items-center justify-center shrink-0 text-white bg-black rounded-full hover:animate-pulse "
+          >
+            <i className="bx bxl-facebook"></i>
+          </a>
+          <a
+            href="#"
+            className="w-8 h-8 flex items-center justify-center shrink-0 text-white bg-black rounded-full hover:animate-pulse "
+          >
+            <i className="bx bxl-twitter"></i>
+          </a>
+        </div>
       </div>
     </header>
   );
