@@ -10,7 +10,6 @@ const Header = () => {
 
   // scroll indicator
   const scrollPercent = useProgress();
-  console.log(scrollPercent);
 
   // Handle scroll event
   useEffect(() => {
@@ -62,7 +61,7 @@ const Header = () => {
       } z-10`}
     >
       <span
-        className="bg-[#89fa02] absolute -top-2 w-full h-2"
+        className="bg-[#89fa02] absolute -top-2 w-full h-2 transition-transform duration-500"
         style={{ transform: `translateX(${scrollPercent - 100}%)` }}
       />
       <div className="wrapper flex justify-between items-center py-4 md:py-6  mx-auto">
