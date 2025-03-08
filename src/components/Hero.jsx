@@ -3,7 +3,7 @@ import heroImage from "../assets/images/hero_image.png";
 
 const Hero = () => {
   return (
-    <div className="mx-auto mt-50">
+    <div className="mx-auto mt-24 md:mt-32">
       <div className="grid gap-6 md:grid-cols-2 md:grid-rows-2 md:content-start">
         <h1 className="self-end">
           Navigating the digital landscape for success

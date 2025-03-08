@@ -4,7 +4,7 @@ import heroImg from "../assets/images/hero_image.png";
 
 const About = () => {
   return (
-    <main className="mt-50">
+    <main className="mt-24 md:mt-32">
       <section className="wrapper mx-auto">
         <div className="grid gap-4 md:gap-8 md:grid-cols-2 p-4 md:p-12 bg-gray-200 rounded-4xl">
           <div>
