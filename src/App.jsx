@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 const App = () => {
   return (
     <BrowserRouter>
+      <div className="scroll-progress fixed top-0 left-0 z-20 h-2 w-full bg-[#89fa02] "></div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

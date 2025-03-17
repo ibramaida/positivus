@@ -120,3 +120,18 @@ h4 {
     );
   }
 }
+
+@keyframes scrollProgress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.scroll-progress {
+  transform-origin: left;
+  animation: scrollProgress linear;
+  animation-timeline: scroll();
+}
